@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="navbar bg-base-100 shadow-2xl lg:px-28 md:lg:px-28">
+
+            <div class="flex-1">
+                <div class="">
+                    <a  class="font-bold text-2xl" href="index.html">Interactive</a>
+                    <p class="font-bold text-slate-600">Geometry Genius</p>
+                </div>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+
+
+                    <li>
+                        <button class="btn btn-primary text-white"><a href="question.html">Blog</a></button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <section class="mx-auto bg-violet-500 text-white md:p-10">
+        <article class="mx-8 p-8">
+            <h2 class="text-center text-2xl mb-2 font-bold">1. What is DOM and what is the purpose of DOM?</h2>
+            <p class="font-medium">The Document Object Model (DOM) is a programming interface for web documents. It is a document programming interface that offers a structured model of the HTML, XHTML, or XML document in the form of a tree. Using computer languages like JavaScript, web developers can interact with and modify the content and structure of a web page using the DOM.</p>
+            <p class="mt-5 font-medium">The DOM was created to offer a standardized method for representing and modifying web page content. It enables web designers to dynamically alter a web page's content without having to reload the whole thing.</p>
+
+            <ul class="list-disc mt-2 font-medium">
+                <li>Modify an HTML element's text content.</li>
+                <li>Dynamically add or remove HTML components.</li>
+                <li>An HTML element's style or properties can be modified.</li>
+                <li>User input and events, including button clicks or form submissions, are responded to.</li>
+            </ul>
+
+
+            
+                <h2 class="text-center text-2xl mt-8 font-bold">2. How will you select HTML elements using DOM? Name the DOM methods.</h2>
+                <p class=" mt-5 font-medium">JavaScript is most commonly used to get or change the content or values ​​of HTML elements on the page, and to apply effects such as fade-ins, fade-outs, animations, etc.
+                    JavaScript's DOM Selectors are used to choose specific HTML elements from a document. There are five ways to use selectors to choose elements in a DOM.</p>
+                <ul class="list-disc mt-5 font-medium">
+                    <li>getElementsByTagName()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>getElementById()</li>
+                    <li>querySelector()</li>
+                    <li>querySelectorAll()</li>
+                </ul>
+
+
+                <h2 class="text-center text-2xl mt-8 font-bold"> What is event bubble?</h2>
+                <p class=" mt-5 font-medium">Event bubbling is a phenomenon in which an event that is triggered on a particular element is propagated up through its parent elements, all the way up to the document object.
+                    The click event will first be triggered on the button element, then on the div element, then on the section element, and so on, until it reaches the document object.
+                    If the event bubbles up to a parent element that has its own event listener for the same event type, that event listener will also be triggered.
+                    To prevent event bubbling, we can use the event.stopPropagation() method inside the event listener for the innermost element. This will stop the event from propagating up to its parent elements, ensuring that only the intended element's event listener is triggered.</p>
+          
+                    <h2 class="text-center text-2xl mt-8 font-bold">What is a callback function and why will you use it?</h2>
+                    <p class=" mt-5 font-medium">A callback function is a function that is passed as an argument to another function and is executed after some operation is completed.
+                        The callback function is executed once the response is received, allowing the application to process the data.
+                        The main benefit of using callback functions is that it allows for non-blocking execution of code.
+                        By using a callback function, the long-running operation can be executed asynchronously in the background, allowing the main thread to continue running and keeping the application responsive.</p>
+           
+
+        </article>
+    </section>
+    
+
+</body>
+
+</html>
